@@ -1,0 +1,87 @@
+/* Глобальные стили */
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("/question_marks_background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Контейнер Bootstrap */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+/* Карточки */
+.card {
+    background: white;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+/* Заголовки */
+h1, h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Карта */
+.map-container {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Улучшенная кнопка Bootstrap */
+.btn {
+    font-size: 18px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Прогресс-бар */
+.progress-bar {
+    transition: width 1s linear;
+}
+
+/* Стили для списка правил */
+/* .list-group-item {
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+} */
+
+/* Медиазапросы для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+    
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    .map-container {
+        height: 250px;
+    }
+}
